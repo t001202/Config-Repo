@@ -1,2 +1,15 @@
 cloud:
   version: Camden SR7 for test
+spring:
+  redis:
+    host: 192.168.121.122
+    port: 6379
+    database: 0
+    password: 111111
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+        max-wait: -1
+    timeout: 5000

@@ -3,3 +3,16 @@ cloud:
 #  事实证明如论在config-client文件夹下面还是在Config-Repo项目下面，客户端都可以读取到信息
 #  进而证明spring-Cloud配置中心，读取配置文件的时候是根据项目application-name + profile进行读取的
 #  如何客户端指定test profile.active = test 读取的是config-client-test文件
+spring:
+  redis:
+    host: 192.168.121.121
+    port: 6379
+    database: 0
+    password: 111111
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+        max-wait: -1
+    timeout: 5000
